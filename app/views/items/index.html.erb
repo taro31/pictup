@@ -1,0 +1,8 @@
+<p>画像アップローダー</p>
+<a href="/items/new">画像を上げる</a>
+
+<div>
+  <p>前回のアップロード</p>
+  <p> <%= @item.original_filename %> </p>
+  <img src="<%= @item.url %>">
+</div>

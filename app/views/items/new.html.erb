@@ -1,0 +1,7 @@
+<P>アップローダー</P>
+
+<%= form_tag("/items", method: "post", multipart: true) do %>
+  <label>画像ファイル</label>
+   <%= file_field :upload, :datafile%>
+   <%= submit_tag  "アップロード"  %>
+<% end %>
